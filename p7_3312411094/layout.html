@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Layout</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .carouse1-item img{
+            height: 80vh;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .card-img-top {
+        height: 220px;
+        object-fit: contain; 
+        width: 100%;
+        }
+
+        body {
+            padding-top: 13px;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #364d0e, #0f91d2);
+        }
+        .bg-warning{
+            background: linear-gradient(to right, #035b08, #40480b) !important;
+            color: white;
+        }
+        footer {
+            background: linear-gradient(to right, #898105, #506306);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+      <h3><i class="fas fa-cart-plus text-success me-2"></i></h3>
+      <a class="navbar-brand fw-bold" href="#">MUSIC STORE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RESELLER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HELP</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="icon mt-2">
+          <h5>
+            <i class="fas fa-cart-plus me-3"></i>
+            <i class="fas fa-envelope me-3"></i>
+            <i class="fas fa-bell me-3"></i>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Content -->
+  <div class="container-fluid mt-5">
+    <div class="row g-0">
+      <!-- Sidebar -->
+      <div class="col-md-2 bg-light">
+        <ul class="list-group list-group-flush p-2 pt-4">
+          <li class="list-group-item bg-warning">
+            <i class="fas fa-list"></i> Kategori Produk
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Piano
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Violin
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Guitar
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Cello
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Flute
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Harp
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Carousel -->
+      <div class="col-md-10">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.pngarts.com/files/1/Acoustic-Guitar-PNG-Picture.png" class="d-block w-100 img-fluid" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://p4.wallpaperbetter.com/wallpaper/525/795/755/cello-violoncello-strings-wallpaper-preview.jpg" class="d-block w-100 img-fluid" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.pinpng.com/pngs/m/671-6711589_electric-piano-hd-png-download.png" class="d-block w-100 img-fluid" alt="Slide 3">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        
+        <!-- Produk Terbaru Section -->
+        <h4 class="text-center fw-bold my-4">Produk Terbaru</h4>
+        <div class="row">
+          <!-- Produk 1 -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="https://usa.yamaha.com/files/210726_a81c74d792c0680c9449597235500050.jpg" class="card-img-top img-fluid" alt="Product 1">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Piano</h5>
+                <p class="card-text">Yamaha GB1K</p>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star-half-alt text-success"></i>
+                <i class="far fa-star text-success"></i><br>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk1">Detail</a>
+                <a href="#" class="btn btn-danger">Rp 72.000.000</a>
+              </div>
+            </div>
+          </div>
+            <!-- Produk 1 -->
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img src="https://tse2.mm.bing.net/th?id=OIP.TY1y1yroemfnKcH-8ckzrAHaJR&pid=Api&P=0&h=220" class="card-img-top img-fluid" alt="Product 1">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">Piano</h5>
+                    <p class="card-text">Steinway & Sons</p>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star-half-alt text-success"></i>
+                    <i class="far fa-star text-success"></i><br>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk1">Detail</a>
+                    <a href="#" class="btn btn-danger">Rp 500.000.000</a>
+                  </div>
+                </div>
+              </div>
+                <!-- Produk 1 -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.OZHhvlvno4msMgi0Ohwe6AHaLH&pid=Api&P=0&h=220" class="card-img-top img-fluid" alt="Product 1">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Lyre harp</h5>
+                <p class="card-text">Lyre harp</p>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star-half-alt text-success"></i>
+                <i class="far fa-star text-success"></i><br>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk1">Detail</a>
+                <a href="#" class="btn btn-danger">Rp 3.000.000</a>
+              </div>
+            </div>
+          </div>
+            <!-- Produk 1 -->
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img src="https://www.londonguitaracademy.com/wp-content/uploads/Gibson-L-1-1926-Vintage-acoustic-guitar.jpg" class="card-img-top img-fluid" alt="Product 1">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">Guitar</h5>
+                    <p class="card-text">Gibson acoustic guitar</p>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star-half-alt text-success"></i>
+                    <i class="far fa-star text-success"></i><br>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk1">Detail</a>
+                    <a href="#" class="btn btn-danger">Rp 3.000.000</a>
+                  </div>
+                </div>
+              </div>
+                <!-- Produk 1 -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/German,_maple_Violin.JPG" class="card-img-top img-fluid" alt="Product 1">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Violin</h5>
+                <p class="card-text">Maple Violin</p>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star-half-alt text-success"></i>
+                <i class="far fa-star text-success"></i><br>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk1">Detail</a>
+                <a href="#" class="btn btn-danger">Rp 2.500.000</a>
+              </div>
+            </div>
+          </div>
+            <!-- Produk 1 -->
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img src="https://static.musiciansfriend.com/derivates/19/001/393/296/DV020_Jpg_Jumbo_467205_front.jpg" class="card-img-top img-fluid" alt="Product 1">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">Cello</h5>
+                    <p class="card-text">Englehardt cello</p>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star-half-alt text-success"></i>
+                    <i class="far fa-star text-success"></i><br>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk1">Detail</a>
+                    <a href="#" class="btn btn-danger">Rp 4.000.000</a>
+                  </div>
+                </div>
+              </div>
+                <!-- Produk 1 -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="https://sc1.musik-produktiv.com/pic-010063345xxl/pearl-flutes-quantz-pf-f525-e.jpghttps://via.placeholder.com/150" class="card-img-top img-fluid" alt="Product 1">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Flute</h5>
+                <p class="card-text">pearl Flute Quantz PF-F525 E</p>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star-half-alt text-success"></i>
+                <i class="far fa-star text-success"></i><br>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk1">Detail</a>
+                <a href="#" class="btn btn-danger">Rp 15.000.000</a>
+              </div>
+            </div>
+          </div>
+            <!-- Produk 1 -->
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img src="https://tse1.mm.bing.net/th?id=OIP.mRvWPJ4TdPmwFBjpnKrNMgHaGI&pid=Api&P=0&h=220" class="card-img-top img-fluid" alt="Product 1">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">Piano</h5>
+                    <p class="card-text">Yamaha DGX-640W</p>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star-half-alt text-success"></i>
+                    <i class="far fa-star text-success"></i><br>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk1">Detail</a>
+                    <a href="#" class="btn btn-danger">Rp 8.000.000</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>LAYANAN PELANGGAN</h4>
+          <p>Menjual</p>
+        </div>
+        <div class="col-md-3">
+          <h4>TENTANG KAMI</h4>
+          <p>Kami menjual Alat musik</p>
+        </div>
+        <div class="col-md-3">
+          <h4>MITRA KERJA SAMA</h4>
+          <p></p>
+        </div>
+        <div class="col-md-3">
+          <h4>HUBUNGI KAMI</h4>
+          <p>Hubungi kami jika anda terdapat kendala </p><br>
+          <a href="#"></a>Facebook
+          <a href="#"></a>WhatsApp
+          <a href="#"></a>Instagram
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="copyright text-center text-white font-weight-bold bg-warning p-2">
+    <span>DEVELOP BY: Yusuf</span> <i class="far fa-copyright"></i>
+  </div>
+  
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
